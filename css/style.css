@@ -483,8 +483,8 @@ img {
     transition-property: color;
 }
 .general-link:hover,
-.general-link:focus {
-    
+.general-link:focus {    
+        
 }
 .section-list {
     padding-top: 94px;
