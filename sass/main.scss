@@ -32,7 +32,8 @@ img {
     display: block;
     height: auto;
 }
-/*Шапка*/
+
+//Шапка
 .header {
     border-bottom: 1px solid #ECECEC; 
 }
@@ -128,7 +129,8 @@ img {
 .info-icon:focus {
     fill: var(--blue-color);
 }
-/*Секция Герой*/
+
+// Секция Герой
 .hero {
     background-color: #2F303A;
     text-align: center;
@@ -170,7 +172,7 @@ img {
     padding: 10px 32px;
     cursor: pointer;
 }
-/*Особености*/
+//Особености
 .specifics {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -203,7 +205,7 @@ img {
     font-size: 14px;
     line-height: 1.71;
 }
-/*Чем мы занимаемся*/
+//Чем мы занимаемся
 .business {
    padding-bottom: 94px;
 }
@@ -237,7 +239,7 @@ img {
     color: var(--white-color);
     padding: 27px 0;
 }
-/*Наша команда*/
+//Наша команда
 .team {
     padding: 94px 0;
     background-color: var(--gray-button);;
@@ -304,7 +306,7 @@ img {
 .team-box-link:focus svg {
     fill: var(--white-color);
 }
-/*Клиенты*/
+//Клиенты
 .client {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -341,7 +343,7 @@ img {
 .client-svg-link:focus {
     fill: var(--blue-color);
 }
-/*Подвал*/
+//Подвал
 .footer {
     background-color: #2F303A;
     padding: 0 15px;
@@ -475,7 +477,7 @@ img {
     margin-left: 10px;
     fill: var(--white-color);
 }
-/*Портфолио css*/
+//Портфолио
 .general-link {
     color: var(--blue-color);
     transition-duration: 250ms;
@@ -483,8 +485,8 @@ img {
     transition-property: color;
 }
 .general-link:hover,
-.general-link:focus {    
-        
+.general-link:focus {
+    color: var(--blue-color);
 }
 .section-list {
     padding-top: 94px;
@@ -587,7 +589,7 @@ img {
     line-height: 1.87;
     color: var(--main-text-color);
 }
-/* Модальное окно */
+//Модальное окно
 .backdrop {
     position: fixed;
     top: 0;
