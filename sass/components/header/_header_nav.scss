@@ -30,18 +30,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
-}
-.header__nav-link:hover,
-.header__nav-link:focus {
-    color: $hover-color;
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
 }
 .header__general-link {
     color: $hover-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
-}
-.header__general-link:hover,
-.header__general-link:focus {
-    color: $hover-color;
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
 }

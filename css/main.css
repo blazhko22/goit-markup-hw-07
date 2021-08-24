@@ -382,8 +382,7 @@ img {
   transition-property: color;
 }
 
-.header__nav-link:hover,
-.header__nav-link:focus {
+.header__nav-link:hover, .header__nav-link:focus {
   color: #2196F3;
 }
 
@@ -400,8 +399,7 @@ img {
   transition-property: color;
 }
 
-.header__general-link:hover,
-.header__general-link:focus {
+.header__general-link:hover, .header__general-link:focus {
   color: #2196F3;
 }
 
@@ -448,8 +446,7 @@ img {
   transition-property: color;
 }
 
-.header__info-link:hover,
-.header__info-link:focus {
+.header__info-link:hover, .header__info-link:focus {
   color: #2196F3;
 }
 
@@ -467,8 +464,7 @@ img {
   transition-property: color;
 }
 
-.header__info-icon:hover,
-.header__info-icon:focus {
+.header__info-icon:hover, .header__info-icon:focus {
   fill: #2196F3;
 }
 
@@ -695,13 +691,12 @@ img {
   transition-property: color;
 }
 
-.team__box-link:last-child {
-  margin-right: 0;
+.team__box-link:hover, .team__box-link:focus {
+  background-color: #2196F3;
 }
 
-.team__box-link:hover,
-.team__box-link:focus {
-  background-color: #2196F3;
+.team__box-link:last-child {
+  margin-right: 0;
 }
 
 .team__box-link svg {
@@ -768,8 +763,7 @@ img {
   transition-property: color;
 }
 
-.client__box-link:hover,
-.client__box-link:focus {
+.client__box-link:hover, .client__box-link:focus {
   border: 1px solid #2196F3;
   color: #2196F3;
 }
@@ -787,8 +781,7 @@ img {
   transition-property: color;
 }
 
-.client__svg-link:hover,
-.client__svg-link:focus {
+.client__svg-link:hover, .client__svg-link:focus {
   fill: #2196F3;
 }
 
@@ -897,13 +890,12 @@ img {
   transition-property: color;
 }
 
-.footer__social-link svg {
-  fill: #FFFFFF;
+.footer__social-link:hover, .footer__social-link:focus {
+  background-color: #2196F3;
 }
 
-.footer__social-link:hover,
-.footer__social-link:focus {
-  background-color: #2196F3;
+.footer__social-link svg {
+  fill: #FFFFFF;
 }
 
 .footer__sign-up {
@@ -1050,8 +1042,7 @@ img {
   transition-property: color;
 }
 
-.folder__filters-button:hover,
-.folder__filters-button:focus {
+.folder__filters-button:hover, .folder__filters-button:focus {
   color: #FFFFFF;
   background-color: #2196F3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1101,8 +1092,7 @@ img {
   transition-property: color;
 }
 
-.folder__navigation-link:hover,
-.folder__navigation-link:focus {
+.folder__navigation-link:hover, .folder__navigation-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1210,8 +1200,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button:hover,
-.modal__button:focus {
+.modal__button:hover, .modal__button:focus {
   cursor: pointer;
 }
 
@@ -1228,8 +1217,7 @@ img {
   fill: #000000;
 }
 
-.modal__icon:focus,
-.modal__icon:hover {
+.modal__icon:focus, .modal__icon:hover {
   fill: #2196F3;
 }
 
