@@ -680,15 +680,15 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 10px;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
 }
 
 .team__box-link:hover, .team__box-link:focus {
@@ -699,21 +699,21 @@ img {
   margin-right: 0;
 }
 
-.team__box-link svg {
+.team__box-link-svg {
   fill: #AFB1B8;
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
 }
 
-.team__box-link:hover svg,
-.team__box-link:focus svg {
+.team__box-link:hover .team__box-link-svg,
+.team__box-link:focus .team__box-link-svg {
   fill: #FFFFFF;
 }
 
@@ -752,15 +752,15 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   color: #AFB1B8;
+  -webkit-transition-property: color, border;
+  -o-transition-property: color, border;
+  transition-property: color, border;
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
 }
 
 .client__box-link:hover, .client__box-link:focus {
@@ -770,15 +770,15 @@ img {
 
 .client__svg-link {
   fill: currentColor;
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
 }
 
 .client__svg-link:hover, .client__svg-link:focus {
@@ -1113,7 +1113,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);

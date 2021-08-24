@@ -43,9 +43,9 @@
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
     &:hover,
     &:focus {
         background-color: $hover-color;
@@ -54,13 +54,13 @@
 .team__box-link:last-child {
     margin-right: 0;
 }
-.team__box-link svg {
+.team__box-link-svg {
     fill: $box-link-color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-.team__box-link:hover svg,
-.team__box-link:focus svg {
-    fill: $primary-bg-color;
+    .team__box-link:hover &,
+    .team__box-link:focus & {
+        fill: $primary-bg-color;
+    }
 }

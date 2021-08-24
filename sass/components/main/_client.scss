@@ -15,9 +15,9 @@
     align-items: center;
     justify-content: center;
     color: $box-link-color;
+    transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
     &:hover,
     &:focus {
         border: 1px solid $hover-color;
@@ -26,9 +26,9 @@
 }
 .client__svg-link {
     fill: currentColor;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
     &:hover,
     &:focus {
         fill: $hover-color;
