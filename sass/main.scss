@@ -1,156 +1,15 @@
-:root {
-    --main-text-color: #757575;
-    --secondary-text-color: #212121;
-    --white-color: #FFFFFF;
-    --blue-color: #2196F3;
-    --black-color: #000000;
-    --gray-button: #F5F4FA;
-}
-body {
-    background-color: var(--white-color);
-    color: var(--main-text-color);
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
-    margin: 0;
-    padding: 0;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    padding: 0 15px;
-    width: 1200px;
-    margin: 0 auto;
-}
-h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
-}
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--secondary-text-color);
-    margin-bottom: 50px;
-}
-
-//Шапка
-.header {
-    border-bottom: 1px solid #ECECEC; 
-}
-.header__container {
-   display: flex;
-   align-items: center;   
-}
-.header__link-logo {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    font-family: Raleway, sans-serif;
-    color: var(--blue-color);
-    text-decoration: none;
-    display: inline-block;
-}
-.header__logo-color {
-    color: black;
-}
-.header__nav {
-    margin-left: 93px;
-}
-.header__nav-list{
-    display: flex;
-    width: 294px;
-    justify-content: space-between;    
-}
-.header__nav-roster {
-    padding: 25px 0;
-    position: relative;
-}
-.header__nav-line::after {
-    position: absolute;
-    content: ""; 
-    top: 2px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-bottom: solid 4px var(--blue-color);
-    border-radius: 2px;
-}
-.header__nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--secondary-text-color);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-.header__nav-link:hover,
-.header__nav-link:focus {
-    color: var(--blue-color);
-}
-.header__general-link {
-    color: var(--blue-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-.header__general-link:hover,
-.header__general-link:focus {
-    color: var(--blue-color);
-}
-.header__info-list{
-    display: flex;
-    margin-left: auto;
-}
-.header__info-list li {
-    margin-right: 30px;
-}
-.header__info-list li:last-child {
-    margin-right: 0;
-}
-.header__info-link {
-    height: 16px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--main-text-color);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-.header__info-link:hover,
-.header__info-link:focus {
-    color: var(--blue-color);    
-}
-.header__info-icon {
-    margin-right: 10px;
-    fill: currentColor;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-.header__info-icon:hover,
-.header__info-icon:focus {
-    fill: var(--blue-color);
-}
+    @import "./utils/color";
+    @import "./utils/normalize";
+    @import "./utils/fonts";
+    @import "./base/general_markup";
+    @import "./components/header/header";
+    @import "./components/header/header_logo";
+    @import "./components/header/header_nav";
+    @import "./components/header/header_list";
 
 // Секция Герой
 .hero {
-    background-color: #2F303A;
+    background-color: $secondary-bg-color;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -171,20 +30,20 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: var(--white-color);
+    color: $primary-bg-color;
     text-transform: uppercase;
     margin: 0px auto 30px auto;
     width: 696px;
 }
 .hero__button {
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    color: $primary-bg-color;
+    background-color: $hover-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     margin: 0px auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px $box-shadow;
     border-radius: 4px;
     border: none;
     padding: 10px 32px;
@@ -204,7 +63,7 @@ img {
 }
 .specifics__icon {
     display: flex;
-    background-color: var(--gray-button);
+    background-color: $background-color;
     margin-bottom: 30px;
     justify-content: center;
     padding-top: 25px;
@@ -216,7 +75,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     text-transform: uppercase;
 }
 .specifics__text {
@@ -246,20 +105,20 @@ img {
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $primary-bg-color;
     padding: 27px 0;
 }
 //Наша команда
 .team {
     padding: 94px 0;
-    background-color: var(--gray-button);;
+    background-color: $background-color;;
 }
 .team__list {
     display: flex;
     justify-content: space-between;
 }
 .team__list li {
-    background: #FFFFFF;
+    background: $primary-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -271,7 +130,7 @@ img {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     margin-bottom: 10px;
 }
 .team__text {
@@ -289,7 +148,7 @@ img {
 .team__box-link {
     width: 44px;
     height: 44px;
-    background-color: var(--white-color);
+    background-color: $primary-bg-color;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -304,17 +163,17 @@ img {
 }
 .team__box-link:hover,
 .team__box-link:focus {
-    background-color: var(--blue-color);
+    background-color: $hover-color;
 }
 .team__box-link svg {
-    fill: #AFB1B8;
+    fill: $box-link-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
 }
 .team__box-link:hover svg,
 .team__box-link:focus svg {
-    fill: var(--white-color);
+    fill: $primary-bg-color;
 }
 //Клиенты
 .client {
@@ -327,21 +186,21 @@ img {
 }
 .client__box-link {
     display: flex;
-    border: 1px solid #AFB1B8;
+    border: 1px solid $box-link-color;
     border-radius: 4px;
     width: 170px;
     height: 92px;
     align-items: center;
     justify-content: center;
-    color: #AFB1B8;
+    color: $box-link-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
 }
 .client__box-link:hover,
 .client__box-link:focus {
-    border: 1px solid var(--blue-color);
-    color: var(--blue-color);
+    border: 1px solid $hover-color;
+    color: $hover-color;
 }
 .client__svg-link {
     fill: currentColor;
@@ -351,11 +210,11 @@ img {
 }
 .client__svg-link:hover,
 .client__svg-link:focus {
-    fill: var(--blue-color);
+    fill: $hover-color;
 }
 //Подвал
 .footer {
-    background-color: #2F303A;
+    background-color: $secondary-bg-color;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -368,7 +227,7 @@ img {
     margin-top: 60px;
 }
 .footer__logo-color {
-    color: white;
+    color: $primary-bg-color;
 }
 .footer__address {
     font-style: normal;
@@ -385,7 +244,7 @@ img {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--white-color);
+    color: $primary-bg-color;
     
 }
 .footer__list-link {
@@ -403,7 +262,7 @@ img {
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $primary-bg-color;
     margin-bottom: 20px;
 }
 .footer__social-list {
@@ -423,11 +282,11 @@ img {
     transition-property: color;
 }
 .footer__social-link svg {
-    fill: var(--white-color);
+    fill: $primary-bg-color;
 }
 .footer__social-link:hover,
 .footer__social-link:focus {
-    background-color: var(--blue-color);
+    background-color: $hover-color;
 }
 .footer__sign-up {
     margin-top: 72px;
@@ -442,7 +301,7 @@ img {
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $primary-bg-color;
     margin-right: 12px;
 }
 .footer__sign-up-text {
@@ -454,9 +313,9 @@ img {
     height: 50px;
     font-size: 16px;
     letter-spacing: 0.03em;
-    background-color: #2F303A;
+    background-color: $secondary-bg-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 4px 4px $box-shadow);
     border-radius: 4px;
     padding: 15px 16px;
 }
@@ -476,16 +335,16 @@ img {
     font-weight: bold;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color: var(--white-color);
-    background-color: var(--blue-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $primary-bg-color;
+    background-color: $hover-color;
+    box-shadow: 0px 4px 4px $box-shadow;
     border-radius: 4px;
     padding: 0;
     border: none;
 }
 .footer__sign-up-svg {
     margin-left: 10px;
-    fill: var(--white-color);
+    fill: $primary-bg-color;
 }
 //Портфолио
 .folder {
@@ -501,8 +360,8 @@ img {
     margin-left: 8px;
 }
 .folder__filters-button {
-    color: var(--secondary-text-color);
-    background-color: var(--gray-button);
+    color: $secondary-text-color;
+    background-color: $background-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -516,13 +375,13 @@ img {
 }
 .folder__filters-button:hover,
 .folder__filters-button:focus {
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    color: $primary-bg-color;
+    background-color: $hover-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .folder__filters-button_active {
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    color: $primary-bg-color;
+    background-color: $hover-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .folder__navigation {
@@ -571,14 +430,14 @@ img {
 .folder__project-text {
     font-size: 18px;
     line-height: 28px;
-    color: var(--white-color);
+    color: $primary-bg-color;
     padding: 63px 24px;
 }
 .folder__list-text {
     padding: 20px 24px;
 }
 .folder__text-title {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -587,7 +446,7 @@ img {
 .folder__indent-text {
     font-size: 16px;
     line-height: 1.87;
-    color: var(--main-text-color);
+    color: $primary-text-color;
 }
 //Модальное окно
 .backdrop {
@@ -609,7 +468,7 @@ img {
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;    
-    background-color: var(--white-color);   
+    background-color: $primary-bg-color;   
 }
 .modal__button {
     position: absolute;
@@ -619,7 +478,7 @@ img {
     border-radius: 50%;
     top: 8px;
     right: 8px;
-    background-color: var(--white-color);
+    background-color: $primary-bg-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition-duration: 250ms;
@@ -635,11 +494,11 @@ img {
     left: 9px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--black-color);
+    fill: $extra-color;
 }
 .modal__icon:focus,
 .modal__icon:hover {
-    fill: var(--blue-color);
+    fill: $hover-color;
 } 
 .modal__from {
     display: flex;
@@ -652,7 +511,7 @@ img {
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     margin-bottom: 12px;
 }
 .modal__from-box {
@@ -665,17 +524,17 @@ img {
     margin-bottom: 20px;
 }
 .modal__from-box:focus-within > .modal__from-input {
-    border-color: var(--blue-color);
+    border-color: $hover-color;
     outline: none;
 }
 .modal__from-box:focus-within > .modal__from-icon {
-    fill: var(--blue-color);
+    fill: $hover-color;
 }
 .modal__from-label {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--main-text-color);
+    color: $primary-text-color;
     margin-bottom: 4px;
 }
 .modal__from-input {
@@ -701,7 +560,7 @@ img {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--black-color);
+    color: $extra-color;
     padding: 12px 16px;
     resize: none;
     outline: none;
@@ -727,8 +586,8 @@ img {
     appearance: none;
 }
 .modal__from-checkbox-input:checked + .modal__from-checkbox-icon {
-    background-color: var(--blue-color);
-    border-color: var(--blue-color);
+    background-color: $hover-color;
+    border-color: $hover-color;
     background-image: url(../img/icon_checked.svg);
     background-size: contain;
     background-origin: border-box;    
@@ -737,7 +596,7 @@ img {
     display: inline-block;
     width: 15px;
     height: 15px;
-    border: 1px solid var(--black-color);
+    border: 1px solid $extra-color;
     border-radius: 4px;
 }
 .modal__from-checkbox-link {
@@ -745,7 +604,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
-    color: var(--blue-color);
+    color: $hover-color;
 }
 .modal__from-button {
     display: flex;
@@ -753,8 +612,8 @@ img {
     justify-content: center;
     width: 200px;
     height: 50px;
-    background-color: var(--blue-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $hover-color;
+    box-shadow: 0px 4px 4px $box-shadow;
     border-radius: 4px;
     border: none;
     margin: auto;
@@ -763,6 +622,6 @@ img {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
-    color: var(--white-color);
+    color: $primary-bg-color;
 }
 

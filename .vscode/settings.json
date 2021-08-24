@@ -12,7 +12,7 @@
         }
     ],
     "liveSassCompile.settings.autoprefix": ["> 1%", "last 10 versions"],
-    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.generateMap": true,
     "liveServer.settings.port": 1235,
     "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
 }
