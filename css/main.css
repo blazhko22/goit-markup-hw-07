@@ -459,12 +459,13 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
 }
 
-.header__info-icon:hover, .header__info-icon:focus {
+.header__info-link:hover .header__info-icon,
+.header__info-link:focus .header__info-icon {
   fill: #2196F3;
 }
 

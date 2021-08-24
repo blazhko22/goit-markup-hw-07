@@ -31,9 +31,9 @@
     fill: currentColor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-    &:hover,
-    &:focus {
+    transition-property: fill;
+    .header__info-link:hover &,
+    .header__info-link:focus & {
         fill: $hover-color;
     }
 }
