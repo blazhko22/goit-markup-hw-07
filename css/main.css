@@ -879,15 +879,15 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
 }
 
 .footer__social-link:hover, .footer__social-link:focus {
